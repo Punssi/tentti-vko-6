@@ -37,7 +37,7 @@ def uusi_blob():
     print("Blob container tehty")
 
 def upload_file():
-    blob = BlobClient.from_connection_string(conn_str="DefaultEndpointsProtocol=https;AccountName=taavistorage20;AccountKey=1GTeymAe2t7vgQDBoaN4Xk/Lmz97ZLD278M1tTgP6+nuUH6Y9ROxxGInY1en/OmZH4tF6B/HSl0pNS9hir+5eg==;EndpointSuffix=core.windows.net", container_name="taaviblobtentti06", blob_name="checkpoint1.txt")
+    blob = BlobClient.from_connection_string(conn_str="<connectionstring>", container_name="<container>", blob_name="<blob>")
 
     with open("./checkpoint.txt", "rb") as data:
         blob.upload_blob(data)
